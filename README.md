@@ -39,7 +39,7 @@ Make sure you have the following installed:
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/devstagram.git
+git clone https://github.com/Diego3128/devstagram
 ```
 
 2. **Navigate to the project directory:**
