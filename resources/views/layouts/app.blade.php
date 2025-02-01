@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-gray-10">
+<body class="bg-gray-10 min-h-dvh relative pb-12 bg-slate-50">
 
     <header class="p-4 border-b shadow bg-white">
         <div class="container mx-auto flex justify-between items-center">
@@ -16,7 +16,7 @@
 
             <nav class="flex gap-2 items-center">
                 <a class="font-bold uppercase text-sm text-gray-500" href="#">Login</a>
-                <a class="font-bold uppercase text-sm text-gray-500" href="#">Register</a>
+                <a class="font-bold uppercase text-sm text-gray-500" href="{{ route('register') }}">Register</a>
             </nav>
 
         </div>
@@ -30,8 +30,8 @@
 
     </main>
 
-    <footer class="text-center font-bold uppercase p-5 text-gray-500">
-        <p>Devstagram - &#169 all rights reserved {{now()->year}}</p>
+    <footer class="text-center font-bold uppercase p-5 text-gray-500 border absolute w-full bottom-0 left-0">
+        <p>Devstagram - &#169 all rights reserved {{ now()->year }}</p>
     </footer>
 </body>
 
