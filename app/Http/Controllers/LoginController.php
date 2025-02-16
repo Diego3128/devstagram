@@ -24,6 +24,6 @@ class LoginController extends Controller
         // auth user
         if(!Auth::attempt($validatedData, $request->remember)) return back()->with('error','wrong credentials');
     
-        return redirect()->route('posts.index')->with('success','welcome');
+        return redirect()->route('posts.index', ['user' => Auth::user()->username])->with('success','welcome');
     }
 }
